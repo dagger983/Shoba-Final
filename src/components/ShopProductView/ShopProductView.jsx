@@ -14,7 +14,6 @@ const shuffleArray = (array) => {
   }
   return array;
 };
-
 const ShopProductView = ({ addToCart }) => {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
