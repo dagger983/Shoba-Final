@@ -1,25 +1,39 @@
-import React, { useMemo, useState, useCallback } from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useMemo, useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { RotatingLines } from "react-loader-spinner";
 import "./Category.css";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 const OfferDetails = ({ addToCart, isMobile }) => {
-  const location = useLocation();
+  const { offerCategory } = useParams();
   const [sortOrder, setSortOrder] = useState("");
-  
-  // Get the filtered products from location state
-  const products = location.state?.products || [];
-  
-  // If products are empty, set loading to false immediately
-  const loading = products.length === 0;
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch('https://appsail-50022032157.development.catalystappsail.in/products');
+        const data = await response.json();
+        setProducts(data);
+      } catch (error) {
+        console.error('Error fetching products:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
 
   const handleSortChange = (event) => {
     setSortOrder(event.target.value);
   };
 
   const filteredAndSortedProducts = useMemo(() => {
-    let sortedProducts = [...products];
+    let filteredProducts = products.filter(product => product.subcategory === offerCategory);
+    let sortedProducts = [...filteredProducts];
 
     switch (sortOrder) {
       case "price-low-to-high":
@@ -29,15 +43,12 @@ const OfferDetails = ({ addToCart, isMobile }) => {
       default:
         return sortedProducts;
     }
-  }, [products, sortOrder]);
+  }, [products, offerCategory, sortOrder]);
 
-  const handleAddToCart = useCallback(
-    (product) => {
-      addToCart({ ...product, quantity: 1 });
-      alert("Product added to cart");
-    },
-    [addToCart]
-  );
+  const handleAddToCart = (product) => {
+    addToCart({ ...product, quantity: 1 });
+    alert("Product added to cart");
+  };
 
   return (
     <>

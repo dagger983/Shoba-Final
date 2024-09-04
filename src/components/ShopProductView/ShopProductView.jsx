@@ -87,7 +87,7 @@ const ShopProductView = ({ addToCart }) => {
                 <div className="product-container">
                   <div className="product-details">
                     <img
-                      src={product.image}
+                      src={product.imageURL}
                       alt={product.name}
                       className="shop-product-image"
                     />

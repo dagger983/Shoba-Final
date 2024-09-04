@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
+import { useNavigate } from 'react-router-dom';
 import "./BannerSlider.css";
 
 const BannerSlider = () => {
   const [randomImages, setRandomImages] = useState([]);
+  const navigate = useNavigate(); // Add useNavigate hook
 
   useEffect(() => {
     const fetchImages = async () => {
@@ -31,12 +33,16 @@ const BannerSlider = () => {
     arrows: false
   };
 
+  const handleImageClick = (offerCategory) => {
+    navigate(`/offer-details/${offerCategory}`);
+  };
+
   return (
     <div className="slider-wrapper">
       <div className="slider-container">
         <Slider {...settings}>
           {randomImages.map((img) => (
-            <div key={img.id}>
+            <div key={img.id} onClick={() => handleImageClick(img.offerCategory)}>
               <img src={img.imageName} alt={`Banner ${img.id}`} className="slider-image" />
             </div>
           ))}

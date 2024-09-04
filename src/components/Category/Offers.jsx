@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom'; 
+import { Link, useNavigate } from 'react-router-dom'; 
 import "./Offer.css";
 import Footer from "../Footer/Footer";
 
@@ -37,28 +37,6 @@ const Offers = () => {
     setCurrentPage(pageNumber);
   };
 
-  const handleImageClick = async (offerId) => {
-    try {
-      const offerResponse = await fetch(`https://appsail-50022032157.development.catalystappsail.in/offers/${offerId}`);
-      const offerData = await offerResponse.json();
-
-      const offerCategory = offerData.offerCategory;
-
-      const productsResponse = await fetch("https://appsail-50022032157.development.catalystappsail.in/products");
-      const productsData = await productsResponse.json();
-
-      const filteredProducts = productsData.filter(product => product.subcategory === offerCategory);
-
-      if (filteredProducts.length > 0) {
-        navigate('/offer-details', { state: { products: filteredProducts } });
-      } else {
-        alert("No matching products found for this offer.");
-      }
-    } catch (error) {
-      console.error('Error fetching offer or products:', error);
-    }
-  };
-
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = offerImages.slice(indexOfFirstItem, indexOfLastItem);
@@ -66,19 +44,22 @@ const Offers = () => {
 
   return (
     <>
-     <br />
+      <br />
       <br />
       <br />
       <div className="design-shoba"></div>
       <div className='MainOffers'>
         <h2>Special Offers</h2>
         {currentItems.map((offer) => (
-          <img 
-            key={offer.id} 
-            src={offer.imageName} 
-            alt={`Offer ${offer.id}`} 
-            onClick={() => handleImageClick(offer.id)} 
-          />
+          <Link 
+            key={offer.id}
+            to={`/offer-details/${offer.offerCategory}`}
+          >
+            <img 
+              src={offer.imageName} 
+              alt={`Offer ${offer.id}`} 
+            />
+          </Link>
         ))}
       </div>
       

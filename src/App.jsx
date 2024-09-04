@@ -246,7 +246,7 @@ const App = () => {
               }
             />
             <Route
-              path="/offer-details"
+              path="/offer-details/:offerCategory"
               element={
                 <>
                   {renderNavbar()}

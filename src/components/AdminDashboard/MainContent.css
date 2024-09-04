@@ -95,3 +95,10 @@ outline:none;
 .admin-header{
   font-size:32px;
 }
+
+.admin-product-image {
+  cursor: pointer;
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px;
+}

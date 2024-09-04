@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./MainContent.css";
 import { FaTrash, FaEdit } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const API_URL =
   "https://appsail-50022032157.development.catalystappsail.in/products";
@@ -339,6 +340,12 @@ const MainContent = () => {
             <ul className="product-list">
               {filteredProducts.map((product) => (
                 <li className="product-item" key={product.id}>
+                  <img
+                    src={product.imageURL}
+                    alt={product.name}
+                    className="admin-product-image"
+                    onClick={() => window.open(`/shop-product/${product.id}`, '_blank')}
+                  />
                   {product.name} - ₹ {product.price}
                   <div className="actions">
                     <FaEdit
