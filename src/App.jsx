@@ -245,7 +245,6 @@ const App = () => {
                 </>
               }
             />
-
             <Route
               path="/offer-details"
               element={
