@@ -1,0 +1,65 @@
+.MainOffers img {
+    width: 900px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.MainOffers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    place-content: center;
+}
+.MainOffers h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 56px;
+    color: #333333;
+    margin-top: 30px;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination button {
+    background-color: #ff00aa;
+    border: none;
+    color: white;
+    padding: 8px 16px; /* Default padding */
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #b9017c;
+}
+
+.pagination button.active {
+    background-color: #ffa600;
+}
+
+.pagination button:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+}
+
+@media screen and (max-width: 768px) {
+    .MainOffers img {
+        width: 300px;
+        margin-top: 30px;
+    }
+    
+    .pagination {
+        margin: 50px 0; 
+    }
+    
+    .pagination button {
+        padding: 6px 12px; 
+        font-size: 12px; 
+    }
+}

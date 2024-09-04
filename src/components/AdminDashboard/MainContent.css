@@ -1,0 +1,97 @@
+.container {
+  padding: 50px;
+  border-radius: 8px;
+}
+
+.container div{
+  margin-top:50px;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.input, .select, .textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submit-button {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+}
+
+.product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.edit-icon, .delete-icon {
+  cursor: pointer;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.edit-icon {
+  color: #3498db;
+}
+
+.edit-icon:hover {
+  color: #2980b9;
+}
+
+.delete-icon {
+  color: #e74c3c;
+}
+
+.delete-icon:hover {
+  color: #c0392b;
+}
+
+.admin-search-bar{
+  padding:10px;
+}
+.admin-search-bar:focus{
+outline:none;
+}
+
+.admin-header{
+  font-size:32px;
+}

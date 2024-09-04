@@ -1,0 +1,22 @@
+.adminlogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+ }
+ 
+ .adminlogin  input{
+    margin-top:20px;
+    padding:10px;
+
+ }
+ .adminlogin  button{
+    padding:10px;
+    margin-top:20px;
+    width:220px;
+ }
+
+ .adminlogin  input:focus{
+    outline: none;
+ }

@@ -1,0 +1,62 @@
+.contactus-head{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 56px;
+    color: #333333;
+    margin-top: 80px;
+}
+.contactus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:60px;
+  
+}
+.contactus form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100%;
+    width:400px;
+    border:1px solid rgb(255, 0, 242);
+    padding:30px;
+    border-radius:20px;
+}
+.contactus input{
+    margin-top:20px;
+    margin-bottom:20px;
+    height:50px;
+    padding:20px;
+    border-radius:20px;
+    border:1px solid rgb(255, 0, 242);
+}
+.contactus button{
+    background: linear-gradient(
+    0deg,
+    rgba(255, 111, 165, 1) 0%,
+    rgba(228, 53, 121, 1) 94%,
+    rgba(255, 0, 134, 1) 100%
+  );
+  color: white;
+  padding:10px;
+  font-size:20p;
+  width:230px;
+  border:none;
+  border-radius:20px;
+  cursor: pointer;
+}
+
+.contactus input:focus{
+    outline: none;
+}
+@media screen and (max-width:768px) {
+    .contactus img{
+        display:none;
+    }
+    .contactus-head{
+        font-size: 32px;
+    }
+    .contactus form{
+        width:300px;
+    }
+}

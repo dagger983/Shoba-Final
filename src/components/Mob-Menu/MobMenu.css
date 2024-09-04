@@ -1,0 +1,39 @@
+.MobMenu{
+    margin-top:80px;
+    text-align: center;
+    font-weight: 400;
+}
+.MobMenu p{
+    margin-top:30px;
+    text-align: center;
+    cursor: pointer;
+    color:#ff0084;
+   
+}
+
+.MobMenu img{
+    height:30px;
+}
+.MobMenu1-2{
+    display: flex;
+    justify-content: center;
+    margin-right:30px;
+}
+.login-menu{
+    margin-left:10px;
+    font-weight: 400;
+    position: relative;
+    top:5px;
+    font-weight: 400;
+    cursor: pointer;
+    color:#ff0084;
+}
+
+.exit-icon{
+    display:flex;
+    justify-content: end;
+    margin-right:20px;
+    position: relative;
+    bottom:50px;
+    cursor: pointer;
+}
