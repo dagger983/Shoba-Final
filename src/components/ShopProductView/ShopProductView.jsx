@@ -94,10 +94,12 @@ const ShopProductView = ({ addToCart }) => {
                   </div>
                   <div className="product-info">
                     <div>
-                      <h2>{product.name}</h2>
+                      <h2>{product.name}</h2> <br />
                       <p>{product.description}</p>
+                      <br />
                       <p>Price: ₹{product.price}</p>
                     </div>
+                    <br />
                     <div className="action-buttons">
                       <button
                         onClick={() => addToCart(product)}
@@ -119,7 +121,7 @@ const ShopProductView = ({ addToCart }) => {
                     {similarProducts.map((similarProduct) => (
                       <div key={similarProduct.id} className="similar-product-card">
                         <img
-                          src={similarProduct.image}
+                          src={similarProduct.imageURL}
                           alt={similarProduct.name}
                           className="similar-product-image"
                           onClick={() => navigate(`/shop-product/${similarProduct.id}`)}

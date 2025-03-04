@@ -91,7 +91,7 @@ const Baby = ({ addToCart, isMobile }) => {
             <div key={product.id} className="product-card">
               <Link to={`/shop-product/${product.id}`}>
                 <div className="card-img-container">
-                  <img src={product.image} alt={product.name} />
+                  <img src={product.imageURL} alt={product.name} />
                 </div>
                 <h3 className="card-title">{product.name}</h3>
                 <p className="card-price">₹{product.price}</p>

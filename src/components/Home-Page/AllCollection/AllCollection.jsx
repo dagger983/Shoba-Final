@@ -70,7 +70,7 @@ const AllCollection = ({ addToCart, isMobile }) => {
             <div key={product.id} className="product-card">
               <Link to={`/shop-product/${product.id}`}>
                 <div className="img-container">
-                  <img src={product.image} alt={product.name} />
+                  <img src={product.imageURL} alt={product.name} />
                 </div>
                 <h3>{product.name}</h3>
                 <p>₹{product.price}</p>
