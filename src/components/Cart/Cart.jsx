@@ -37,7 +37,7 @@ const Cart = ({ isOpen, cartItems, removeFromCart, updateQuantity, onClose }) =>
     const totalPayment = subtotal;
   
     const productsDetails = cartItems.map(item => 
-      `Product: ${item.name}\nQuantity: ${item.quantity}\nPrice: ₹${item.price}\nURL: ${window.location.origin}/product/${item.id}\n\n`
+      `Product: ${item.name}\nQuantity: ${item.quantity}\nPrice: ₹${item.price}\nURL: ${window.location.origin}/shop-product/${item.id}\n\n`
     ).join("");
   
     const message = encodeURIComponent(
@@ -63,7 +63,7 @@ const Cart = ({ isOpen, cartItems, removeFromCart, updateQuantity, onClose }) =>
           cartItems.map((item) => (
             <div key={item.id} className="cart-item" role="listitem">
               <Link to={`/product/${item.id}`}>
-                <img src={item.image} alt={item.name} className="item-image" />
+                <img src={item.imageURL} alt={item.name} className="item-image" />
               </Link>
               <div className="item-details">
                 <p style={{fontWeight:"400",marginTop:"10px"}}>{item.name}</p>
