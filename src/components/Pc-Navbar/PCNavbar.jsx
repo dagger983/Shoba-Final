@@ -177,7 +177,7 @@ const PCNavbar = ({ onCartClick }) => {
                   className="search-suggestion-item"
                   onClick={() => handleSuggestionClick(product)}
                 >
-                  <img src={product.image} alt={product.name} />
+                  <img src={product.imageURL} alt={product.name} />
                   <div className="product-details">
                     <h4>{highlightText(product.name, searchTerm)}</h4>
                   </div>
