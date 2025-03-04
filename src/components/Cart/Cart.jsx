@@ -37,7 +37,7 @@ const Cart = ({ isOpen, cartItems, removeFromCart, updateQuantity, onClose }) =>
     const totalPayment = subtotal;
   
     const productsDetails = cartItems.map(item => 
-      `Product: ${item.name}\nQuantity: ${item.quantity}\nPrice: ₹${item.price}\nURL: ${window.location.origin}/shop-product/${item.id}\n\n`
+      `Product: ${item.name}\nQuantity: ${item.quantity}\nPrice: ₹${item.price}\n\n`
     ).join("");
   
     const message = encodeURIComponent(

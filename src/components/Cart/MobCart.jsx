@@ -35,7 +35,7 @@ const MobCart = ({ isOpen, cartItems, removeFromCart, updateQuantity, onClose })
     const message = `Order Details:\n\nAddress: ${address}\n\nItems:\n${cartItems
       .map(
         (item) =>
-          `${item.name} (Qty: ${item.quantity}) - ₹${item.price * item.quantity}\nProduct Link:  ${window.location.origin}/shop-product/${item.id}
+          `${item.name} (Qty: ${item.quantity}) - ₹${item.price * item.quantity}\n
           \n`
       )
       .join('\n')}\nTotal Amount: ₹${calculateTotal()}`;
