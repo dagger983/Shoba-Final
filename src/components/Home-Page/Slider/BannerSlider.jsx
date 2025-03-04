@@ -43,7 +43,7 @@ const BannerSlider = () => {
         <Slider {...settings}>
           {randomImages.map((img) => (
             <div key={img.id} onClick={() => handleImageClick(img.offerCategory)}>
-              <img src={img.imageName} alt={`Banner ${img.id}`} className="slider-image" />
+              <img src={img.imageName}  className="slider-image" />
             </div>
           ))}
         </Slider>
