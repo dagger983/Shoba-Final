@@ -7,7 +7,7 @@ const Contact = () => {
      <h2 className='contactus-head'>Contact Us</h2>
       <div className="contactus">    
         <div>
-          <form action="">
+          <form action="" method="post">
             <label htmlFor="name">Name</label> <br />
             <input type="text" placeholder='Name' required/> <br />
             <label htmlFor="phone">Phone</label>  <br />
