@@ -155,7 +155,11 @@ const SearchResults = ({ addToCart }) => {
               filteredProducts.map((product) => (
                 <div key={product.id} className="productItem">
                   <Link to={`/shop-product/${product.id}`}>
+<<<<<<< HEAD
                     <img src={product.imageURL} />
+=======
+                    <img src={product.imageURL} alt={product.name} />
+>>>>>>> 963ce7a8b505779dd5f04cd4303df7e8d74b4226
                     <p>{product.name}</p>
                     <p>Price : ₹{product.price}</p>
                   </Link>
