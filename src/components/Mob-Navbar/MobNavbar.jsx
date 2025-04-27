@@ -14,13 +14,12 @@ const MobNavbar = () => {
       <div className="MobNav">
         <div className="MobShoba">
           <img
-            style={{ position: "relative", left: "50px" }}
-            src="/shoba1.png"
+            style={{ position: "relative", top:"30px" }}
+            src="/AnbuKamal-Digi Assets.png"
             alt=""
             className="MobShoba1"
           />
-          <br />
-          <img src="/shoba2.png" alt="" className="MobShoba2" />
+         
         </div>
         <div>
           <Link to="/mob-cart">

@@ -101,12 +101,10 @@ const PCNavbar = ({ onCartClick }) => {
     <div className="navbar-main">
       <div>
         <img
-          style={{ position: "relative", left: "20px" }}
-          src="/shoba1.png"
+          style={{ position: "relative", left: "20px",height:"90px" }}
+          src="/AnbuKamal-Digi Assets.png"
           alt="Logo 1"
         />
-        <br />
-        <img src="/shoba2.png" alt="Logo 2" />
       </div>
       <div className="navbar-sec2">
         <div className="navbar-sec2-1">
@@ -115,36 +113,29 @@ const PCNavbar = ({ onCartClick }) => {
           </Link>
           <div className="nav-style"></div>
           <Link to="/load-more">
-            <p>Collections</p>
+            <p>All Products</p>
           </Link>
           <div className="nav-style"></div>
-          <Link to="/Offers">
-            <p>Offers</p>
+          <Link to="/HomeFurnitures">
+            <p>Home Furnitures</p>
           </Link>
           <div className="nav-style"></div>
           <Link to="/mens">
-            <p>Mens</p>
+            <p>Office Furnitures</p>
           </Link>
           <div className="nav-style"></div>
           <Link to="/womens">
-            <p>Womens</p>
+            <p>Kids Furnitures</p>
           </Link>
           <div className="nav-style"></div>
           <Link to="/kids">
-            <p>Kids</p>
-          </Link>
-          <div className="nav-style"></div>
-          <Link to="/baby">
-            <p>Baby</p>
-          </Link>
-          <div className="nav-style"></div>
-          <Link to="/others">
-            <p>Others</p>
+            <p>Home Appliances</p>
           </Link>
           <div className="nav-style"></div>
           <Link to="/contact">
             <p>Contact</p>
           </Link>
+         
         </div>
         <div className="searchbar-sec">
           <div>
@@ -177,7 +168,7 @@ const PCNavbar = ({ onCartClick }) => {
                   className="search-suggestion-item"
                   onClick={() => handleSuggestionClick(product)}
                 >
-                  <img src={product.image} alt={product.name} />
+                  <img src={product.imageURL} alt={product.name} />
                   <div className="product-details">
                     <h4>{highlightText(product.name, searchTerm)}</h4>
                   </div>

@@ -22,9 +22,9 @@ import Mens from "./components/Category/Mens";
 import Womens from "./components/Category/Womens";
 import Kids from "./components/Category/Kids";
 import Offers from "./components/Category/Offers";
-import Baby from "./components/Category/Baby";
 import Other from "./components/Category/Other";
 import Contact from "./components/Contact/Contact";
+import HomeFurnitures from "./components/Category/HomeFurnitures";
 import AdminDashboard from "./components/AdminDashboard/AdminDashboard";
 import OfferDetails from "./components/Category/OfferDetails";
 import AdminLogin from "./components/AdminDashboard/AdminLogin";
@@ -219,11 +219,11 @@ const App = () => {
               }
             />
             <Route
-              path="/baby"
+              path="/HomeFurnitures"
               element={
                 <>
                   {renderNavbar()}
-                  <Baby addToCart={addToCart} isMobile={isMobile} />
+                  <HomeFurnitures addToCart={addToCart} isMobile={isMobile} />
                 </>
               }
             />

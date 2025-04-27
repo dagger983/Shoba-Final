@@ -55,7 +55,7 @@ const MobSearch = () => {
                 className="product-item"
               >
                 <img
-                  src={product.image}
+                  src={product.imageURL}
                   alt={product.name}
                   className="product-image"
                 />

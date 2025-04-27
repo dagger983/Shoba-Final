@@ -69,11 +69,11 @@ const RoundSlider = () => {
   };
 
   const categories = [
-    { id: 1, name: "Womens", img: "/women.jpg", path: "/womens" },
-    { id: 2, name: "Kids", img: "/kids.jpg", path: "/kids" },
-    { id: 3, name: "Mens", img: "/mens.webp", path: "/mens" },
-    { id: 4, name: "Babys", img: "/baby.jpg", path: "/baby" },
-    { id: 5, name: "Others", img: "/others.jpg", path: "/others" },
+    { id: 1, name: "Beds", img: "/beds.webp", path: "/womens" },
+    { id: 2, name: "Sofas", img: "/sofas.jpg", path: "/kids" },
+    { id: 3, name: "Chairs", img: "/chairs.jpg", path: "/mens" },
+    { id: 4, name: "Mattress", img: "/matress.jpg", path: "/baby" },
+    { id: 5, name: "Home appliances", img: "/Home appliances.webp", path: "/others" },
   ];
 
   const handleCategoryClick = (path) => {

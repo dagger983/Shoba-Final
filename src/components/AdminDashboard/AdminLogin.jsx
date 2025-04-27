@@ -8,7 +8,7 @@ const LoginPage = () => {
 
   const handleLogin = () => {
     // Simple authentication logic for demonstration
-    if (username === 'admin' && password === 'shoba@1999') {
+    if (username === 'admin' && password === 'anbukamal@123') {
       localStorage.setItem('isAuthenticated', 'true');
       navigate('/admin');
     } else {
@@ -18,7 +18,7 @@ const LoginPage = () => {
 
   return (
     <div className='adminlogin'>
-      <h2>Shoba Admin Login</h2>
+      <h2>Anbu Kamal Furniture Admin Login</h2>
       <form action="">
       <input
         type="text"

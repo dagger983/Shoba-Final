@@ -30,7 +30,7 @@
     width: 100px;
     border: none;
     cursor: pointer;
-    background-color: rgb(255, 0, 179);
+    background-color: rgb(0, 183, 255);
     color: white;
 }
 
@@ -48,7 +48,7 @@
     padding: 10px;
     width: 200px;
     border: none;
-    background-color: rgb(255, 0, 179);
+    background-color: rgb(0, 183, 255);
     color: white;
     cursor: pointer;
 }
@@ -56,7 +56,7 @@
 .design-shoba {
     height: 1px;
     width: 100%;
-    background-color: rgb(184, 0, 122);
+    background-color: rgb(3, 184, 255);
 }
 
 .loader-wrapper {
@@ -174,7 +174,7 @@
     
   }
   .modal-content button{
-    background-color: rgb(249, 93, 119);
+    background-color: rgb(0, 183, 255);
     padding:10px;
     font-size:18px;
     border:none;

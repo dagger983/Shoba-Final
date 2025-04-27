@@ -11,12 +11,7 @@ const Footer = () => {
           <img
           style={{position:"relative",left:"10px"}}
             className="tcc-logo2"
-            src="/shoba1.png"
-            alt="Shoba Family Shop"
-          />
-          <img
-            style={{height:"50px"}}
-            src="/shoba2.png"
+            src="/AnbuKamal-Digi Assets.png"
             alt="Shoba Family Shop"
           />
         </div>
@@ -50,13 +45,13 @@ const Footer = () => {
           <div>
             <img src="/earth.gif" alt="Location" /> <br />
             <a href="#">
-              Manapparai & Singampunari
+              Manapparai & Thogaimalai
             </a>
           </div>
           <div>
             <img src="/mail.gif" alt="Email" /> <br />
-            <a href="mailto:mnpshobacustomer@gmail.com">
-            mnpshobacustomer@gmail.com
+            <a href="mailto:anbukamal@gmail.com">
+           anbukamal@gmail.com
             </a>
           </div>
         </div>
@@ -66,7 +61,7 @@ const Footer = () => {
         <br />
         <div>
           <p style={{ textAlign: "center" }}>
-            © {getCurrentYear()}   Shoba Family Shop All Rights Reserved. Designed and
+            © {getCurrentYear()}  Anbu Kamal Furniture All Rights Reserved. Designed and
             Developed by
             <a style={{textDecoration:"underline",color:"blueviolet"}} href="https://rategle-tech.web.app/"> Rategle Technologies</a>
           </p>

@@ -47,14 +47,14 @@ footer {
 .design-line {
     height: 4px;
     width: 80%;
-    background-color: #700355;
+    background-color: #0597bb;
     margin: 30px auto 0;
 }
 
 .design-line2 {
     height: 4px;
     width: 50%;
-    background-color: #700355;
+    background-color: #0597bb;
     margin-top: 30px;
     display: flex;
     justify-content: center;

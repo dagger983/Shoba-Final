@@ -10,7 +10,7 @@ const BannerSlider = () => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response = await fetch('https://appsail-50022032157.development.catalystappsail.in/offers');
+        const response = await fetch('https://anbu-kamal-backend.onrender.com/offers');
         const data = await response.json();
         const shuffledImages = data.sort(() => 0.5 - Math.random());
         setRandomImages(shuffledImages.slice(0, 3));
@@ -33,16 +33,16 @@ const BannerSlider = () => {
     arrows: false
   };
 
-  const handleImageClick = (offerCategory) => {
-    navigate(`/offer-details/${offerCategory}`);
-  };
+  // const handleImageClick = (offerCategory) => {
+  //   navigate(`/offer-details/${offerCategory}`);
+  // };
 
   return (
     <div className="slider-wrapper">
       <div className="slider-container">
         <Slider {...settings}>
           {randomImages.map((img) => (
-            <div key={img.id} onClick={() => handleImageClick(img.offerCategory)}>
+            <div key={img.id} >
               <img src={img.imageName}  className="slider-image" />
             </div>
           ))}

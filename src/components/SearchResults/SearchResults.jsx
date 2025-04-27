@@ -37,6 +37,7 @@ const SearchResults = ({ addToCart }) => {
     };
 
     fetchProducts();
+   
   }, []);
 
   const applyFilters = (productList = products) => {
@@ -86,7 +87,6 @@ const SearchResults = ({ addToCart }) => {
 
   const handleOpenFilter = () => setShowFilter(true);
   const handleCloseFilter = () => setShowFilter(false);
-
   return (
     <>
     <br />
@@ -155,7 +155,7 @@ const SearchResults = ({ addToCart }) => {
               filteredProducts.map((product) => (
                 <div key={product.id} className="productItem">
                   <Link to={`/shop-product/${product.id}`}>
-                    <img src={product.image} alt={product.name} />
+                    <img src={product.imageURL} />
                     <p>{product.name}</p>
                     <p>Price : ₹{product.price}</p>
                   </Link>

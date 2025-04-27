@@ -106,15 +106,15 @@
     padding:5px;
     width:200px;
     background-color:white;
-    border:1px solid rgb(255, 0, 140);
-    color: rgb(255, 0, 140);
+    border:1px solid rgb(0, 174, 255);
+    color: rgb(0, 174, 255);
     cursor: pointer;
     margin-top:30px;
 }
 
 .LoadMoreBtn button:hover{
-    border:1px solid rgb(122, 0, 67);
-    color: rgb(122, 0, 67);
+    border:1px solid rgb(0, 63, 122);
+    color: rgb(0, 63, 122);
 }
 
 

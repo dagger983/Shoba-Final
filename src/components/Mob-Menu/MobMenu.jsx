@@ -34,27 +34,21 @@ const MobMenu = () => {
           <p>Home</p>
         </Link>
         <Link to="/load-more">
-          <p>Collections</p>
+          <p>All Products</p>
         </Link>
-        <Link to="/Offers">
+        <Link to="/HomeFurnitures">
           {" "}
-          <p>Offers</p>
+          <p>Home Furnitures</p>
         </Link>
         <Link to="/mens">
-          <p>Mens</p>
+          <p>Office Furnitures</p>
         </Link>
         <Link to="/womens">
-          <p>Womens</p>
+          <p>Kids Furnitures</p>
         </Link>
         <Link to="/kids">
           {" "}
-          <p>Kids</p>
-        </Link>
-        <Link to="/baby">
-          <p>Baby</p>
-        </Link>
-        <Link to="/others">
-          <p>Others</p>
+          <p>Home Appliances</p>
         </Link>
         <Link to="/contact">
           <p>Contact</p>

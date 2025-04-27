@@ -9,12 +9,12 @@
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
-    color: #ff0084;
+    color:black;
     font-weight: 600;
 }
 
 .navbar-sec2 p:hover {
-    color: #9e0052;
+    color: #585858;
 }
 
 .navbar-sec2-1 {
