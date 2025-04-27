@@ -136,8 +136,7 @@ const ShopProductView = ({ addToCart }) => {
                           <button
                             onClick={() => addToCart(similarProduct)}
                             className="add-to-cart-button"
-                          >
-                            Add to Cart
+                          > Add to Cart
                           </button>
                         </div>
                       </div>
